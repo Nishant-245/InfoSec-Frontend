@@ -1,0 +1,82 @@
+.datatable {
+  height: 600px;
+  padding: 20px;
+
+  .datatableTitle {
+    width: 100%;
+    font-size: 24px;
+    color: gray;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .link {
+      text-decoration: none;
+      color: green;
+      font-size: 16px;
+      font-weight: 400;
+      border: 1px solid green;
+      padding: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+
+  .cellWithImg {
+    display: flex;
+    align-items: center;
+
+    .cellImg {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+
+    .textContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .cellName {
+        font-weight: bold;
+        margin-bottom: 2px;
+      }
+
+      .cellDescription {
+        font-size: 12px;
+        color: gray;
+      }
+    }
+  }
+
+  .cellWithStatus {
+    padding: 5px;
+    border-radius: 5px;
+    width: 60px; /* Set a fixed width */
+    height: 15px; /* Set a fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+
+    &.GET {
+      background-color: rgba(3, 37, 255, 0.454);
+      color: hsl(0, 0%, 100%);
+    }
+    &.POST {
+      background-color: rgba(133, 246, 4, 0.507);
+      color: hsl(0, 0%, 100%);
+    }
+    &.DELETE {
+      background-color: rgba(255, 0, 0, 0.517);
+      color: hsl(0, 0%, 100%);
+    }
+    &.PUT {
+      background-color: rgba(255, 128, 0, 0.649);
+      color: hsl(0, 0%, 100%);
+    }
+  }
+}
